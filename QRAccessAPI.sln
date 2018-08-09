@@ -3,7 +3,29 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2047
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.API", "QRA.API\QRA.API.csproj", "{B5BFB40E-EBA3-46E6-968D-946C2674C75A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QRA.API", "QRA.API\QRA.API.csproj", "{B5BFB40E-EBA3-46E6-968D-946C2674C75A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Entities", "QRA.Entities\QRA.Entities.csproj", "{D311EE53-832B-4D9B-99FB-EA482D419D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Enumerators", "QRA.Enumerators\QRA.Enumerators.csproj", "{D95EF855-8925-4C25-A863-AF29035C91E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Extensions", "QRA.Extensions\QRA.Extensions.csproj", "{FEB2664D-F7F8-4F0E-99FD-583F0D2B41F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Models", "QRA.Models\QRA.Models.csproj", "{6E39203E-F03C-4F92-BA13-1A194CDDAE51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Services", "QRA.Services\QRA.Services.csproj", "{87B656F6-A152-433C-9E5D-3D80BD1CEDE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Repositories", "QRA.Repositories\QRA.Repositories.csproj", "{B25B6C2C-6EC5-45F1-9400-FA7AA0976156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Domains", "QRA.Domains\QRA.Domains.csproj", "{917D5A4D-9CCB-428B-947C-0D0085D099CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Domains.Interfaces", "QRA.Domains.Interfaces\QRA.Domains.Interfaces.csproj", "{1CCDDEAA-AFCD-42FB-8F93-393671C9E887}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Repositories.Interfaces", "QRA.Repositories.Interfaces\QRA.Repositories.Interfaces.csproj", "{AE2B0F3A-272B-445D-92ED-97ACCE461F17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Services.Interfaces", "QRA.Services.Interfaces\QRA.Services.Interfaces.csproj", "{6BDE80A2-1F2F-4516-8105-E080445D76D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Tests", "QRA.Tests\QRA.Tests.csproj", "{FE21C281-29BA-4AEE-81A2-41B3E83810B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +37,50 @@ Global
 		{B5BFB40E-EBA3-46E6-968D-946C2674C75A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5BFB40E-EBA3-46E6-968D-946C2674C75A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5BFB40E-EBA3-46E6-968D-946C2674C75A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D311EE53-832B-4D9B-99FB-EA482D419D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D311EE53-832B-4D9B-99FB-EA482D419D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D311EE53-832B-4D9B-99FB-EA482D419D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D311EE53-832B-4D9B-99FB-EA482D419D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95EF855-8925-4C25-A863-AF29035C91E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95EF855-8925-4C25-A863-AF29035C91E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95EF855-8925-4C25-A863-AF29035C91E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95EF855-8925-4C25-A863-AF29035C91E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB2664D-F7F8-4F0E-99FD-583F0D2B41F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB2664D-F7F8-4F0E-99FD-583F0D2B41F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB2664D-F7F8-4F0E-99FD-583F0D2B41F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB2664D-F7F8-4F0E-99FD-583F0D2B41F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E39203E-F03C-4F92-BA13-1A194CDDAE51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E39203E-F03C-4F92-BA13-1A194CDDAE51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E39203E-F03C-4F92-BA13-1A194CDDAE51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E39203E-F03C-4F92-BA13-1A194CDDAE51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87B656F6-A152-433C-9E5D-3D80BD1CEDE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87B656F6-A152-433C-9E5D-3D80BD1CEDE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87B656F6-A152-433C-9E5D-3D80BD1CEDE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87B656F6-A152-433C-9E5D-3D80BD1CEDE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25B6C2C-6EC5-45F1-9400-FA7AA0976156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25B6C2C-6EC5-45F1-9400-FA7AA0976156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25B6C2C-6EC5-45F1-9400-FA7AA0976156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25B6C2C-6EC5-45F1-9400-FA7AA0976156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{917D5A4D-9CCB-428B-947C-0D0085D099CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{917D5A4D-9CCB-428B-947C-0D0085D099CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{917D5A4D-9CCB-428B-947C-0D0085D099CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{917D5A4D-9CCB-428B-947C-0D0085D099CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CCDDEAA-AFCD-42FB-8F93-393671C9E887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CCDDEAA-AFCD-42FB-8F93-393671C9E887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CCDDEAA-AFCD-42FB-8F93-393671C9E887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CCDDEAA-AFCD-42FB-8F93-393671C9E887}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE2B0F3A-272B-445D-92ED-97ACCE461F17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE2B0F3A-272B-445D-92ED-97ACCE461F17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE2B0F3A-272B-445D-92ED-97ACCE461F17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE2B0F3A-272B-445D-92ED-97ACCE461F17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BDE80A2-1F2F-4516-8105-E080445D76D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BDE80A2-1F2F-4516-8105-E080445D76D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BDE80A2-1F2F-4516-8105-E080445D76D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BDE80A2-1F2F-4516-8105-E080445D76D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE21C281-29BA-4AEE-81A2-41B3E83810B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE21C281-29BA-4AEE-81A2-41B3E83810B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE21C281-29BA-4AEE-81A2-41B3E83810B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE21C281-29BA-4AEE-81A2-41B3E83810B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
