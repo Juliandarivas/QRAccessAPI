@@ -2,10 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <RootNamespace>QRA.Migrations</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Content\" />
+    <Compile Remove="Migrations\20180812223257_InitialMigration.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QRA.Repositories\QRA.Repositories.csproj" />
   </ItemGroup>
 
 </Project>

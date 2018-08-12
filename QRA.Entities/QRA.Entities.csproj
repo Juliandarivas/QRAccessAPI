@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Content\" />
+    <ProjectReference Include="..\QRA.Enumerators\QRA.Enumerators.csproj" />
   </ItemGroup>
 
 </Project>
