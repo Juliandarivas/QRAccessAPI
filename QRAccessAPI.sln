@@ -35,6 +35,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extras", "Extras", "{AC1874
 		Extras\QRAExample.mdf = Extras\QRAExample.mdf
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Resolvers", "QRA.Resolvers\QRA.Resolvers.csproj", "{D0C54D3B-69E5-46B0-92BA-D96C8EE9ADCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{F2C7554A-FE0F-4370-8169-98B99A32F468}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2C7554A-FE0F-4370-8169-98B99A32F468}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2C7554A-FE0F-4370-8169-98B99A32F468}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0C54D3B-69E5-46B0-92BA-D96C8EE9ADCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0C54D3B-69E5-46B0-92BA-D96C8EE9ADCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0C54D3B-69E5-46B0-92BA-D96C8EE9ADCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0C54D3B-69E5-46B0-92BA-D96C8EE9ADCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

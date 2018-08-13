@@ -10,7 +10,7 @@ using QRA.Repositories.Content;
 namespace QRA.Migrations.Migrations
 {
     [DbContext(typeof(QRAContext))]
-    [Migration("20180812224109_InitialMigration")]
+    [Migration("20180813035026_InitialMigration")]
     partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

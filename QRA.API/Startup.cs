@@ -10,6 +10,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using QRA.Repositories.Content;
+using QRA.Resolvers.Content;
 
 namespace QRA.API
 {
@@ -25,8 +26,11 @@ namespace QRA.API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //QRAResolver.Initialize(services);
+
             services.AddDbContext<QRAContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DevelopmentConnection"), x => x.MigrationsAssembly("QRA.Migrations")));
+                options.UseSqlServer(Configuration.GetConnectionString("DevelopmentConnection"),
+                x => x.MigrationsAssembly("QRA.Migrations")));
 
             services.AddMvc();
         }

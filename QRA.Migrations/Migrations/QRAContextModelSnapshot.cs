@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using QRA.Repositories.Content;
 
-namespace QRA.Migrations.Content.Migrations
+namespace QRA.Migrations.Migrations
 {
     [DbContext(typeof(QRAContext))]
     partial class QRAContextModelSnapshot : ModelSnapshot

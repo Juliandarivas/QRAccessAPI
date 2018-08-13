@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using QRA.Entities.Content;
 
 namespace QRA.Repositories.Content
@@ -10,7 +11,8 @@ namespace QRA.Repositories.Content
         public DbSet<Cuenta> Cuentas { get; set; }
 
         public QRAContext(DbContextOptions<QRAContext> options) : base(options)
-        {   
+        {
+            
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

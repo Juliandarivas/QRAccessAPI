@@ -2,12 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>QRA.Migrations</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Migrations\20180812223257_InitialMigration.cs" />
-    <Compile Remove="Migrations\20180812224109_InitialMigration.cs" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.9" />
   </ItemGroup>
 
   <ItemGroup>
