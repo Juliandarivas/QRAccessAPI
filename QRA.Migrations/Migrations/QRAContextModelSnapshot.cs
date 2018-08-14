@@ -26,17 +26,21 @@ namespace QRA.Migrations.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Clave");
-
-                    b.Property<int>("Estado");
-
-                    b.Property<DateTime>("FechaRegistro");
-
                     b.Property<int>("IdUsuario");
 
-                    b.Property<string>("NombreUsuario");
+                    b.Property<string>("Clave")
+                        .HasColumnType("VARCHAR(100)");
 
-                    b.HasKey("Id");
+                    b.Property<byte>("Estado");
+
+                    b.Property<DateTime>("FechaRegistro")
+                        .HasColumnType("SMALLDATETIME");
+
+                    b.Property<string>("NombreUsuario")
+                        .HasColumnType("VARCHAR(50)");
+
+                    b.HasKey("Id", "IdUsuario")
+                        .HasAnnotation("SqlServer:Clustered", true);
 
                     b.ToTable("Cuenta");
                 });
@@ -60,23 +64,31 @@ namespace QRA.Migrations.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Apellidos");
+                    b.Property<string>("Apellidos")
+                        .HasColumnType("VARCHAR(30)");
 
-                    b.Property<string>("CorreoElectronico");
+                    b.Property<string>("CorreoElectronico")
+                        .HasColumnType("VARCHAR(50)");
 
-                    b.Property<string>("Direccion");
+                    b.Property<string>("Direccion")
+                        .HasColumnType("VARCHAR(100)");
 
-                    b.Property<DateTime>("FechaNacimiento");
+                    b.Property<DateTime>("FechaNacimiento")
+                        .HasColumnType("SMALLDATETIME");
 
                     b.Property<int>("IdTipoIdentificacion");
 
-                    b.Property<string>("Identificacion");
+                    b.Property<string>("Identificacion")
+                        .HasColumnType("VARCHAR(20)");
 
-                    b.Property<string>("Movil");
+                    b.Property<string>("Movil")
+                        .HasColumnType("VARCHAR(20)");
 
-                    b.Property<string>("Nombres");
+                    b.Property<string>("Nombres")
+                        .HasColumnType("VARCHAR(30)");
 
-                    b.Property<string>("Telefono");
+                    b.Property<string>("Telefono")
+                        .HasColumnType("VARCHAR(20)");
 
                     b.HasKey("Id");
 

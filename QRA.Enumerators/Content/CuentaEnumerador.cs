@@ -2,7 +2,7 @@
 {
     public class CuentaEnumerador
     {
-        public enum EstadoCuenta
+        public enum EstadoCuenta : byte
         {
             Inactivo = 0,
             Activo = 1,

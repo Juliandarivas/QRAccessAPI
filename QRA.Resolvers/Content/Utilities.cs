@@ -2,9 +2,6 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using QRA.Repositories.Content;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace QRA.Resolvers.Content
 {
