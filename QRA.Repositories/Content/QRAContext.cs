@@ -6,14 +6,13 @@ namespace QRA.Repositories.Content
 {
     public class QRAContext : DbContext
     {
+        
+
         public DbSet<TipoIdentificacion> TiposIdentificacion { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Cuenta> Cuentas { get; set; }
 
-        public QRAContext(DbContextOptions<QRAContext> options) : base(options)
-        {
-            
-        }
+        public QRAContext(DbContextOptions<QRAContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\QRA.Migrations\QRA.Migrations.csproj" />
-    <ProjectReference Include="..\QRA.Repositories\QRA.Repositories.csproj" />
     <ProjectReference Include="..\QRA.Resolvers\QRA.Resolvers.csproj" />
   </ItemGroup>
 

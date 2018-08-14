@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using QRA.Migrations.Content;
@@ -13,6 +14,7 @@ namespace QRA.API
         public static void Main(string[] args)
         {
             var host = BuildWebHost(args);
+
             using (var scope = host.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
@@ -27,7 +29,6 @@ namespace QRA.API
                     logger.LogError(ex, "An error occurred initializing the database.");
                 }
             }
-
             host.Run();
         }
 

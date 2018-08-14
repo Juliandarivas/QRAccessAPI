@@ -10,10 +10,10 @@ namespace QRA.Resolvers.Content
 {
     public static class QRAResolver 
     {
-        public  static void Initialize(IServiceCollection services)
+        public static void Initialize(IServiceCollection services, IConfiguration configuration)
         {
-
-
+            Utilities.Inicialize(services, configuration);
+            
             ////services.Configure<CookiePolicyOptions>(options =>
             ////{
             ////    options.CheckConsentNeeded = context => true;

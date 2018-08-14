@@ -1,11 +1,10 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
-using QRA.Migrations.Content;
 
 namespace QRA.Migrations.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class MigracionInicial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -65,7 +64,6 @@ namespace QRA.Migrations.Migrations
                 {
                     table.PrimaryKey("PK_Usuario", x => x.Id);
                 });
-
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
