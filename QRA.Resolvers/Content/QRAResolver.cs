@@ -1,5 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using System;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using QRA.Repositories.Content;
 
 namespace QRA.Resolvers.Content
 {
@@ -7,24 +9,33 @@ namespace QRA.Resolvers.Content
     {
         public static void Initialize(IServiceCollection services, IConfiguration configuration)
         {
-            Utilities.Inicialize(services, configuration);
-            
-            ////services.Configure<CookiePolicyOptions>(options =>
-            ////{
-            ////    options.CheckConsentNeeded = context => true;
-            ////    options.MinimumSameSitePolicy = SameSiteMode.None;
-            ////});
-
-            ////services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
-            ////services.AddScoped<IMyDependency, MyDependency>();
-            ////services.AddTransient<IOperationTransient, Operation>();
-            ////services.AddScoped<IOperationScoped, Operation>();
-            ////services.AddSingleton<IOperationSingleton, Operation>();
-            ////services.AddSingleton<IOperationSingletonInstance>(new Operation(Guid.Empty));
-
-            ////// OperationService depends on each of the other Operation types.
-            ////services.AddTransient<OperationService, OperationService>();
+            InitializeContext(services, configuration);
+            //InitializeRepositories(services);
+            //InitializeServices(services);
+            //InitializeDomains(services);
+            //InitializeApplications(services);
         }
+        private static void InitializeContext(IServiceCollection services, IConfiguration configuration)
+        {
+            Utilities.RegisterContext<QRAContext>(services, configuration);
+        }
+        private static void InitializeRepositories(IServiceCollection services)
+        {
+            throw new NotImplementedException();
+        }
+        private static void InitializeServices(IServiceCollection services)
+        {
+            throw new NotImplementedException();
+        }
+        private static void InitializeDomains(IServiceCollection services)
+        {
+            throw new NotImplementedException();
+        }
+
+        private static void InitializeApplications(IServiceCollection services)
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }

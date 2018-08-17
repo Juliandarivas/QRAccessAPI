@@ -6,7 +6,7 @@ using System.Text;
 
 namespace QRA.Repositories.Content.Builder
 {
-    public static class UsuarioBuilder
+    public static class UsuarioModelBuilder
     {
         public static void Initialize(ModelBuilder modelBuilder)
         {
