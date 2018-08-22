@@ -7,7 +7,7 @@ namespace QRA.Migrations.Content
     {
         public static void Initialize(QRAContext context)
         {
-            context.Database.Migrate();
+            
         }
     }
 }
