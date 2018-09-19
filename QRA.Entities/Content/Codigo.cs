@@ -7,10 +7,11 @@ namespace QRA.Entities.Content
     public class Codigo
     {
         public int Id { get; set; }
+        public int IdCuenta { get; set; }
+        public int Estado { get; set; }
         public string Identificador { get; set; }
         public string Token { get; set; }
 
-
-        public virtual ICollection<CodigoCuenta> CodigosCuentas { get; set; }
+        public virtual Cuenta Cuenta { get; set; }
     }
 }

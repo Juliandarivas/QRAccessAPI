@@ -9,5 +9,14 @@
             Suspendido = 2,
             Bloqueado = 3
         }
+
+        public enum TipoCuenta : byte
+        {
+            Master = 0,
+            Administrador = 1,
+            Funcionario = 2,
+            Propietario = 3,
+            Invitado = 4
+        }
     }
 }

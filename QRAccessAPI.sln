@@ -37,7 +37,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extras", "Extras", "{AC1874
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QRA.Resolvers", "QRA.Resolvers\QRA.Resolvers.csproj", "{D0C54D3B-69E5-46B0-92BA-D96C8EE9ADCB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QRA.Authentication", "QRA.Authentication\QRA.Authentication.csproj", "{5C196AF4-E31A-4258-B6EE-B8D5CFE2FB38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QRA.Authentication", "QRA.Authentication\QRA.Authentication.csproj", "{5C196AF4-E31A-4258-B6EE-B8D5CFE2FB38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
